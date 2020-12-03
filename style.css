@@ -33,6 +33,54 @@ body {
   left: -100px;
 }
 
+/* bring nav in after the rotation */
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+/* navigation */
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  /* remove bullets */
+  list-style-type: none;
+}
+
+/* nav items will come in from left */
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  /* transform: translateX(-100%); */
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* move li's after initial li out by 15px */
+
+nav ul li + li {
+  margin-left: 15px;
+  /* start out  */
+  /* transform: translateX(-150%); */
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+  /* transform: translateX(-200%); */
+}
+
+/* Content area */
 .circle {
   background-color: #2dcc7d;
   height: 200px;
