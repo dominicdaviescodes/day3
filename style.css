@@ -34,7 +34,7 @@ body {
 }
 
 .circle {
-  background-color: #ff7979;
+  background-color: #2dcc7d;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -72,4 +72,23 @@ body {
 
 .content img {
   max-width: 100%;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.content small {
+  color: #555;
+  font-style: italic;
+}
+
+.content p {
+  color: #333;
+  line-height: 1.5;
 }
