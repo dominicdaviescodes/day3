@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #D31157;
+  background-color: #d31157;
   color: #222;
   /* hide only on x axis */
   overflow-x: hidden;
@@ -80,7 +80,7 @@ nav ul li + li + li {
   /* transform: translateX(-200%); */
 }
 
-/* Content area */
+/* Circle/ hamburger menu */
 .circle {
   background-color: #2dcc7d;
   height: 200px;
@@ -89,6 +89,10 @@ nav ul li + li + li {
   /* so buttons can be absolute */
   position: relative;
   transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
 }
 
 .circle button {
@@ -117,6 +121,8 @@ nav ul li + li + li {
   transform: rotate(90deg);
   transform-origin: top left;
 }
+
+/* Content area */
 
 .content img {
   max-width: 100%;
