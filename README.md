@@ -45,15 +45,15 @@ All we will do with js is add and remove a class
 * We will click the hamburger menu
 * it will add class show-nav
 
-![the open element](./images/1.jpg)
+![the open element](./images/1.JPG)
 
 * the nav is now showing
   
-![the show nav effect](./images/shownav.jpg)
+![the show nav effect](./images/shownav.JPG)
 
 * the hamburger menu has rotated upward allowing the X to close the menu and remove the class, allowing the page to rotate to normal 
   
-![the close element](./images/2.jpg)
+![the close element](./images/2.JPG)
 
 ### Bringing the elements into our JS file
 
@@ -83,7 +83,7 @@ In this case clicking our buttons will rotate the page and bring it back to norm
 open.addEventListener('click', () => container.classList.add('show-nav'));
 ```
 
-![the show nav effect](./images/shownav.jpg)
+![the show nav effect](./images/shownav.JPG)
 
 
 #### Removing the show-nav class
@@ -95,4 +95,4 @@ close.addEventListener('click', () => container.classList.remove('show-nav'));
 ```
 Once the hamburger button has been clicked above, the X button is exposed. We'll add an Event Listener to this so when it's click we'll tell it to remove the show-nav class bringing the container back to normal state.
 
-![the close element](./images/2.jpg)
+![the close element](./images/2.JPG)
